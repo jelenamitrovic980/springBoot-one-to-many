@@ -18,12 +18,16 @@ public class OrderResponse {
 
 	private String name;
 	private String productName;
+	
+	
+	
+	public OrderResponse(String name, String productName) {
+		super();
+		this.name = name;
+		this.productName = productName;
+	}
 
-//	public OrederResponse(String name, String productName) {
-//		this.name;
-//		this.productName;
-//		
-//	}
+
 
 	private int price;
 
