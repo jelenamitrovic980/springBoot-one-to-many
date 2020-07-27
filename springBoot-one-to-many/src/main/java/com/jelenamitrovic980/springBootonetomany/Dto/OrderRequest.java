@@ -1,10 +1,11 @@
-package springBootOneToMany.Dto;
+package com.jelenamitrovic980.springBootonetomany.Dto;
+
+import com.jelenamitrovic980.springBootonetomany.Entity.Customer;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import springBootOneToMany.Entity.Customer;
 
 @Data
 @AllArgsConstructor

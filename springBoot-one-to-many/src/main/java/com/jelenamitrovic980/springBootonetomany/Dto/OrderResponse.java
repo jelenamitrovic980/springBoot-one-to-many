@@ -1,4 +1,4 @@
-package springBootOneToMany.Dto;
+package com.jelenamitrovic980.springBootonetomany.Dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

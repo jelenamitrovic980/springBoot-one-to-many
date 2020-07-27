@@ -1,4 +1,4 @@
-package springBootOneToMany.Controller;
+package com.jelenamitrovic980.springBootonetomany.Controller;
 
 import java.util.List;
 
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import springBootOneToMany.Dto.OrderRequest;
-import springBootOneToMany.Dto.OrderResponse;
-import springBootOneToMany.Entity.Customer;
-import springBootOneToManyRepository.CustomerRepository;
-import springBootOneToManyRepository.ProductRepository;
+import com.jelenamitrovic980.springBootonetomany.Dto.OrderRequest;
+import com.jelenamitrovic980.springBootonetomany.Dto.OrderResponse;
+import com.jelenamitrovic980.springBootonetomany.Entity.Customer;
+import com.jelenamitrovic980.springBootonetomany.Repository.CustomerRepository;
+import com.jelenamitrovic980.springBootonetomany.Repository.ProductRepository;
 
 @RestController
 @RequestMapping("/api")

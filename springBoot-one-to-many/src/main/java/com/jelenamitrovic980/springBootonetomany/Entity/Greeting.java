@@ -1,4 +1,4 @@
-package springBootOneToMany.Entity;
+package com.jelenamitrovic980.springBootonetomany.Entity;
 
 public class Greeting {
 	
