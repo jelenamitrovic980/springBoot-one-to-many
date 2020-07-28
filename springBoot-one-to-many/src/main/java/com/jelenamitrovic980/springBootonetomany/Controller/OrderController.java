@@ -27,7 +27,12 @@ public class OrderController {
 
 	@PostMapping("/placeOrder")
 	public Customer placeOrder(@RequestBody OrderRequest request) {
-		return customerRepository.save(request.getCustomer());
+		try {
+			Customer customer = request.getCustomer();
+			return  customerRepository.save(customer);
+		}catch (Exception ex) {
+			throw ex;
+		}
 
 	}
 
