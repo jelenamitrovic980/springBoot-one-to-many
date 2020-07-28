@@ -1,16 +1,16 @@
-package springBootOneToManyRepository;
+package com.jelenamitrovic980.springBootonetomany.Repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import springBootOneToMany.Dto.OrderResponse;
-import springBootOneToMany.Entity.Customer;
+import com.jelenamitrovic980.springBootonetomany.Dto.OrderResponse;
+import com.jelenamitrovic980.springBootonetomany.Entity.Customer;
 
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 	
-	@Query("SELECT new com.jelenamitrovic980.springBootonetomany.springBootOneToMany.Dto.OrderResponse"
+	@Query("SELECT new com.jelenamitrovic980.springBootonetomany.Dto.OrderResponse"
 			+ "(c.name, p.productName) FROM Customer c JOIN c.products p")
 	public List<OrderResponse> getJoinInformation();
 
