@@ -1,6 +1,7 @@
 package com.jelenamitrovic980.springBootonetomany.Entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
@@ -14,8 +15,9 @@ import lombok.ToString;
 @ToString
 @Entity
 public class Product {
-	
+
 	@Id
+	@GeneratedValue
 	private int pid;
 	private String productName;
 	private int qty;
